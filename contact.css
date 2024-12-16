@@ -1,0 +1,67 @@
+:root {
+    --foreground-clr: #e0e1dd;
+    --background-clr: #415a77;
+    --darker-clr: #1b263b;
+    --accent-clr: #609dda;
+}
+
+main {
+    padding: 3em 0;
+}
+
+.container {
+    text-align: center;
+    h2 {
+        margin-top: 2em;
+    }
+}
+
+.data-container {
+    display: grid;
+    place-content: center;
+    min-height: 20vh;
+}
+
+.fetch-btn {
+    margin-inline: auto;
+    margin-bottom: 2em;
+    padding: 1em 2em;
+}
+
+.city-container {
+    border: 1px solid var(--darker-clr);
+    max-width: 40vw;
+    padding: 0.5em 1em;
+}
+
+.city-container + .city-container {
+    margin-top: 1em;
+}
+
+.population {
+    margin-top: 0.2em;
+}
+
+.delete-btn {
+    margin-inline: auto;
+}
+
+form {
+    margin: 2em 0;
+    & h4 {
+        margin-bottom: 1em;
+    }
+}
+
+input[type="text"] {
+    padding: 0.5em;
+}
+
+.post-btn,
+.put-btn {
+    display: inline;
+}
+
+.btn + .btn {
+    margin-left: 2em;
+}

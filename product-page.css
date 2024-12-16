@@ -1,0 +1,122 @@
+:root {
+    --foreground-clr: #e0e1dd;
+    --background-clr: #415a77;
+    --darker-clr: #1b263b;
+    --accent-clr: #609dda;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    min-height: 100%;
+}
+
+.product-details {
+    margin: 1em 0;
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 1em;
+    border-radius: 3px;
+}
+
+.product-details-images,
+.product-details-text {
+    padding: 2em;
+}
+
+.img-container {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.thumbnails-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    .thumbnail-container {
+        border: 2px solid var(--background-clr);
+        border-radius: 2px;
+        cursor: pointer;
+        margin: 0 4px 8px 4px;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            border-color: var(--accent-clr);
+        }
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.active {
+    border-color: var(--accent-clr) !important;
+}
+
+.product-details-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-details-text span {
+    display: block;
+}
+
+.product-name {
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+.product-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6em;
+    span {
+        margin-right: 0.2em;
+    }
+}
+
+.product-description {
+    max-width: 400px;
+    margin-inline: auto;
+    line-height: 1.6;
+    margin-top: 1.2em;
+}
+
+.add-cart-btn {
+    margin-inline: auto;
+}
+
+@media (min-width: 980px) {
+    .product-details {
+        margin: 4em 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-details-text {
+        text-align: start;
+    }
+
+    .product-rating {
+        justify-content: flex-start;
+    }
+
+    .product-description {
+        max-width: none;
+        margin-inline: 0;
+    }
+
+    .add-cart-btn {
+        margin-inline: 0;
+    }
+}

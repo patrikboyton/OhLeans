@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohleans - Shopping online</title>
+    <script src="https://kit.fontawesome.com/66c0ec6a62.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stats.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">Oh<span>leans</span></h1>
+            <label class="mobile-menu" for="mobile-menu-check">
+                <input type="checkbox" id="mobile-menu-check">
+            </label>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="index.html?limit=16&skip=82" class="nav-link">Mens</a></li>
+                    <li class="nav-list-item"><a href="index.html?limit=22&skip=172" class="nav-link">Womens</a></li>
+                    <li class="nav-list-item"><a href="stats.html" class="nav-link">Stats</a></li>
+                    <li class="nav-list-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-media__container">
+                <ul class="social-media__list">
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-solid fa-envelope fa-2xl"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-solid fa-square-phone fa-2xl"></i></a></li>
+                </ul>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">Home</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">FAQ</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">Policy</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-copy__container">
+                <p class="footer-copy__text">&copy;2024 Ohleans</p>
+                <p class="footer-copy__text">Ohleans is a school project. Any resemblance to real brands or intellectual properties is purely coincidental.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="stats.js"></script>
+</body>
+</html>
