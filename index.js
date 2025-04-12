@@ -89,3 +89,27 @@ const searchBar = document.querySelector("#search-bar");
 searchButton.addEventListener("click", () => {
     searchBar.classList.toggle("show-search");
 });
+
+//Callbacks
+const names = ["patrik", "agnes", "jonatan", "ioanna"];
+
+function myForEach(arr, callback) {
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        callback(element);
+    }
+}
+
+myForEach(names, console.log);
+
+function otherFunc(arr, callback) {
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        callback(element);
+    }
+}
+
+const numbers = [1, 2, 3, 4, 5];
+const timesTwo = (num) => console.log(num * 2);
+
+otherFunc(numbers, (num) => console.log('cb:', num * 2));
